@@ -1,0 +1,44 @@
+@import '../../style/style.sass'
+@import '../../style/fonts/gilroy/stylesheet.css'
+@import '../../style/fonts/nekst/stylesheet.css'
+
+.output
+    width: 330px
+    height: 81px
+    padding: 0
+    &__title
+        font-family: 'Gilroy'
+        font-style: normal
+        font-weight: 400
+        font-size: 16px
+        line-height: 150%
+        color: $grey-color
+    &__result
+        font-family: 'Nekst-Black'
+        font-style: normal
+        font-weight: 900
+        font-size: 54px
+        line-height: 90%
+        color: $black-color
+        margin-top: 8px
+
+
+@media ( max-width: 1119px )
+    .output
+        width: 332px
+        &__title
+            color: $black-color
+
+
+@media ( max-width: 767px )
+    .output
+        width: 167px
+        height: 41px
+        margin-bottom: 29px
+        &__title
+            font-size: 14px
+            line-height: 136%
+        &__result
+            font-size: 22px
+            line-height: 20px
+            margin-top: 2px
